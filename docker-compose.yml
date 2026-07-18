@@ -1,0 +1,57 @@
+version: '3.8'
+
+services:
+  customer-service:
+    build: ./customer-service
+    expose:
+      - "5001"
+    environment:
+      - PORT=5001
+    volumes:
+      - customer-data:/usr/src/app/data
+    restart: always
+
+  expert-service:
+    build: ./expert-service
+    expose:
+      - "5002"
+    environment:
+      - PORT=5002
+    volumes:
+      - expert-data:/usr/src/app/data
+    restart: always
+
+  booking-service:
+    build: ./booking-service
+    expose:
+      - "5003"
+    environment:
+      - PORT=5003
+      - CUSTOMER_SERVICE_URL=http://customer-service:5001
+      - EXPERT_SERVICE_URL=http://expert-service:5002
+    volumes:
+      - booking-data:/usr/src/app/data
+    depends_on:
+      - customer-service
+      - expert-service
+    restart: always
+
+  api-gateway:
+    build: ./api-gateway
+    ports:
+      - "8000:8000"
+    environment:
+      - PORT=8000
+      - CUSTOMER_SERVICE_URL=http://customer-service:5001
+      - EXPERT_SERVICE_URL=http://expert-service:5002
+      - BOOKING_SERVICE_URL=http://booking-service:5003
+    depends_on:
+      - customer-service
+      - expert-service
+      - booking-service
+    restart: always
+
+volumes:
+  customer-data:
+  expert-data:
+  booking-data:

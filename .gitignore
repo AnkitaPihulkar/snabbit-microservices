@@ -1,0 +1,9 @@
+node_modules/
+*.db
+*.db-journal
+*.zip
+temp_docx/
+submission_temp/
+Assignment_1_copy.docx
+test_execution_screenshot.png
+.system_generated/

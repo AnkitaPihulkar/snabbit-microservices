@@ -1,0 +1,14 @@
+{
+  "name": "expert-service",
+  "version": "1.0.0",
+  "description": "Expert (service professional) management service for Snabbit",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2",
+    "sqlite3": "^5.1.7"
+  }
+}
