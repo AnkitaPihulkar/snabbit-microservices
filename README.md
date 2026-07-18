@@ -13,6 +13,8 @@
 
 **GitHub Repository Link**: [https://github.com/AnkitaPihulkar/snabbit-microservices.git](https://github.com/AnkitaPihulkar/snabbit-microservices.git)
 
+**Session Demo Videos**: [Google Drive Folder](https://drive.google.com/drive/folders/1vAkQuxhzYm9pfXZBJureLcN_BUgOlBhj?usp=sharing)
+
 ---
 
 ### B. Application Overview (Snabbit Platform)
@@ -261,6 +263,8 @@ To demonstrate fault isolation in your video:
 ---
 
 ### K. Demo Video Guide & Scripts
+
+**Recorded Session Demo Videos**: [Google Drive Folder](https://drive.google.com/drive/folders/1vAkQuxhzYm9pfXZBJureLcN_BUgOlBhj?usp=sharing)
 
 To help you record the three required demo videos, here are structured scripts and checklists:
 
