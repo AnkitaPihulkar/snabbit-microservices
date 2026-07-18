@@ -174,7 +174,7 @@ curl http://localhost:5003/health
 
 ---
 
-### I. Step-by-Step Test Guide (for Screenshots & Demo Videos)
+### I. Step-by-Step Test Guide (for Demo Videos)
 
 Use the following `curl` script commands to demonstrate the working microservice application for your video.
 
