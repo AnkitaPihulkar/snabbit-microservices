@@ -11,6 +11,8 @@
 | **2024SI96517** | Praharaj Tripathy | Expert Service registry design, SQLite database schemas, API Gateway setup. |
 | **2024SI96539** | Sufiya Ikhlas | Booking Service orchestration, Axios request chains, Dockerfile creation. |
 
+**GitHub Repository Link**: [https://github.com/AnkitaPihulkar/snabbit-microservices.git](https://github.com/AnkitaPihulkar/snabbit-microservices.git)
+
 ---
 
 ### B. Application Overview (Snabbit Platform)
